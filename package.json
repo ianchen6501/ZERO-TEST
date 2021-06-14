@@ -12,17 +12,14 @@
     "styled-components": "^5.3.0",
     "web-vitals": "^1.0.1"
   },
+  "homepage": "https://ianchen6501.github.io/ZERO-TEST/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [
