@@ -1,0 +1,31 @@
+.LogoSVG {
+  /* width: 300px; */
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+
+  animation: Move;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@media screen and (max-width: 600px) {
+  .LogoSVG {
+    position: relative;
+    top: 50px;
+  }
+}
+
+@keyframes Move {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes Gradient {
+  50% {
+    border: solid 3px white;
+  }
+  100% {
+    border: solid 3px transparent;
+  }
+}
