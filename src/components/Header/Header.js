@@ -185,22 +185,22 @@ export default function Header() {
   const [windowWidth, setWindowWidth] = useState(null)
   const [isSidebarOn, setIsSidebarOn] = useState(false)
 
-  function handleSetWindowWidth() {
-    setWindowWidth(window.innerWidth)
-  }
-
   function handleHamburgerClick() {
     setIsSidebarOn(!isSidebarOn)
   }
 
   useEffect(() => {
-    handleSetWindowWidth()
-    window.addEventListener("resize", () => {
-      handleSetWindowWidth()
-    })
+    if(window) {
+      //init windowWidth
+      setWindowWidth(window.innerWidth)
+      //listen to resize and reset windowWidth
+      window.addEventListener("resize", () => {
+        setWindowWidth(window.innerWidth)
+      })
 
-    return () => {
-      window.removeEventListener("resize", handleSetWindowWidth)
+      return () => {
+        window.removeEventListener("resize", handleSetWindowWidth)
+      }
     }
   }, [])
 
