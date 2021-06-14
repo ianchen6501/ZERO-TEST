@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ZERO-TEST/static/css/main.d70b3965.chunk.css",
-    "main.js": "/ZERO-TEST/static/js/main.d2fed505.chunk.js",
-    "main.js.map": "/ZERO-TEST/static/js/main.d2fed505.chunk.js.map",
+    "main.js": "/ZERO-TEST/static/js/main.c83d33d2.chunk.js",
+    "main.js.map": "/ZERO-TEST/static/js/main.c83d33d2.chunk.js.map",
     "runtime-main.js": "/ZERO-TEST/static/js/runtime-main.04ab557d.js",
     "runtime-main.js.map": "/ZERO-TEST/static/js/runtime-main.04ab557d.js.map",
     "static/js/2.b3e753c0.chunk.js": "/ZERO-TEST/static/js/2.b3e753c0.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.04ab557d.js",
     "static/js/2.b3e753c0.chunk.js",
     "static/css/main.d70b3965.chunk.css",
-    "static/js/main.d2fed505.chunk.js"
+    "static/js/main.c83d33d2.chunk.js"
   ]
 }
