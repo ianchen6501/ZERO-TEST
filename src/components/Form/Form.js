@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { useRef } from "react/cjs/react.development";
 import styled from "styled-components";
 import { MEDIA_QUERY_SM, MEDIA_QUERY_LG } from "../../constants/breakPoint"
 
@@ -206,7 +205,6 @@ const Button = styled.button `
 
 
 export default function Form() {
-  const mobileInputPlaceholder = useRef("Get Code")
   const [mobileInputValue, setMobileInputValue] = useState("")
 
   return (
@@ -249,7 +247,7 @@ export default function Form() {
         <InputContainer>
           <InputTitle>Mobile Authentication</InputTitle>
           <InputBottomContainer>
-            <Input desktopWidth="100px" width="120px" style={{marginRight: "40px"}} placeholder={mobileInputPlaceholder.current} onChange={(e) => setMobileInputValue(e.target.value)}></Input>
+            <Input desktopWidth="100px" width="120px" style={{marginRight: "40px"}} placeholder="Get Code" onChange={(e) => setMobileInputValue(e.target.value)}></Input>
             <Input desktopWidth="452px" width="calc(100% - 120px - 40px)"></Input>
           </InputBottomContainer>
         </InputContainer>

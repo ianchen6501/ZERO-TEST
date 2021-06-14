@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import { useState } from "react/cjs/react.development";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import logoImg from "../../static/logo.png"
 import mobleLogoImg from "../../static/logo_mobile.png"
@@ -182,7 +181,7 @@ const SidebarSelectContainer = styled.div `
 
 export default function Header() {
   const mediaLargeWidth = parseInt(MEDIA_QUERY_LG.replace("@media screen and (max-width: ", "").replace("px)", ""))
-  const [windowWidth, setWindowWidth] = useState(null)
+  const [windowWidth, setWindowWidth] = useState(undefined)
   const [isSidebarOn, setIsSidebarOn] = useState(false)
 
   function handleHamburgerClick() {
@@ -199,7 +198,7 @@ export default function Header() {
       })
 
       return () => {
-        window.removeEventListener("resize", handleSetWindowWidth)
+        window.removeEventListener("resize", () => {setWindowWidth(window.innerWidth)})
       }
     }
   }, [])

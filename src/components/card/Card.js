@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {MEDIA_QUERY_SM, MEDIA_QUERY_LG } from "../../constants/breakPoint"
+import {MEDIA_QUERY_SM } from "../../constants/breakPoint"
 
 const CardContainer = styled.div `
   position: relative;
